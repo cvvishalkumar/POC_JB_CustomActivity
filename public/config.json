@@ -8,8 +8,8 @@
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Template",
-          "description": "A Template for a custom Journey Builder activity",
+            "name": "Send MMS activity",
+          "description": "A custom activity to send MMS",
           "step1Label": "Configure Activity"
         }
     },
@@ -17,7 +17,7 @@
         "execute": {
            "inArguments":[
 				{
-                    "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}"
+                    "emailAddress": "{{Contact.Attribute.Master_proofing.Email}}"
                 }									
 			],
           "outArguments": [],
