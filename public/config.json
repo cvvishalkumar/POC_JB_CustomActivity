@@ -23,11 +23,11 @@
           "outArguments": [],
           "url": "https://enivnrwna7qqdm7.m.pipedream.net",
            "verb": "POST",
-            "body": "[
+            "body": 
 				{
                     "emailAddress": "{{Contact.Attribute.Master_proofing.Email}}"
                 }									
-			]",
+			,
             "header": "",
             "format": "json",
             "useJwt": true,
