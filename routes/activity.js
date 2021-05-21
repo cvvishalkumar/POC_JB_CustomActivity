@@ -89,6 +89,25 @@ exports.execute = function (req, res) {
             var decodedArgs = decoded.inArguments[0];
             console.log("V: Inside execute block L90");
             logData(req);
+            
+            var request = require('request');
+            var url = 'https://enivnrwna7qqdm7.m.pipedream.net';
+            
+            request({
+                        url:url,
+                        method:"post",
+                        json: decoded.inArguments[0]
+                    },
+                    function (error, response, body)
+                    {
+                        if (!error)
+                        {
+                            console.log(body);
+                        }
+                    }
+                   );
+            
+            
             res.send(200, 'Execute');
         } else {
             console.error('inArguments invalid.');
