@@ -17,17 +17,13 @@
         "execute": {
            "inArguments":[
 				{
-                    "emailAddress": "cvvishalkumar@gmail.com"
+                    "emailAddress":  {{InteractionDefaults.Email}}
                 }									
 			],
           "outArguments": [],
-          "url": "https://enivnrwna7qqdm7.m.pipedream.net",
+          "url": "https://poc-vishal-jb-custom-activity.herokuapp.com/journeybuilder/execute",
            "verb": "POST",
-            "body": 
-				{
-                    "emailAddress": "{{Contact.Attribute.Master_proofing.Email}}"
-                }									
-			,
+            "body": "",
             "header": "",
             "format": "json",
             "useJwt": true,
