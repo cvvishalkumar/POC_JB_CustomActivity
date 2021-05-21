@@ -42,12 +42,12 @@ define([
 
         console.log(inArguments);
 
-        $.each(inArguments, function (index, inArgument) {
-            $.each(inArgument, function (key, val) {
+       // $.each(inArguments, function (index, inArgument) {
+           // $.each(inArgument, function (key, val) {
                 
               
-            });
-        });
+            //});
+        //});
 
         connection.trigger('updateButton', {
             button: 'next',
