@@ -51,7 +51,7 @@ define([
 
         connection.trigger('updateButton', {
             button: 'next',
-            text: 'done',
+            text: 'vis_complete',
             visible: true
         });
     }
