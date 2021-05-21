@@ -51,7 +51,7 @@ define([
 
         connection.trigger('updateButton', {
             button: 'next',
-            text: 'vis_complete',
+            text: 'done',
             visible: true
         });
     }
@@ -69,12 +69,12 @@ define([
         //var postcardURLValue = $('#postcard-url').val();
         //var postcardTextValue = $('#postcard-text').val();
 
-        /*payload['arguments'].execute.inArguments = [{
+        payload['arguments'].execute.inArguments = [{
             "tokens": authTokens,
             "emailAddress": "{{InteractionDefaults.Email}}"
-        }]; */
+        }];
         
-        //payload['metaData'].isConfigured = true;
+        payload['metaData'].isConfigured = true;
 
         console.log(payload);
         connection.trigger('updateActivity', payload);
