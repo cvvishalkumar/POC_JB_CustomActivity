@@ -17,7 +17,7 @@
         "execute": {
            "inArguments":[
 				{
-                    "emailAddress": "{{Contact.Attribute.Master_proofing.Email}}"
+                    "emailAddress": "cvvishalkumar@gmail.com"
                 }									
 			],
           "outArguments": [],
