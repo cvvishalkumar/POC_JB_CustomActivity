@@ -63,7 +63,8 @@ exports.edit = function (req, res) {
  */
 exports.save = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
-    //console.log( req.body );
+    console.log("V: Inside Save block");
+    console.log( req.body );
     logData(req);
     res.send(200, 'Save');
 };
@@ -72,7 +73,7 @@ exports.save = function (req, res) {
  * POST Handler for /execute/ route of Activity.
  */
 exports.execute = function (req, res) {
-
+    console.log("V: Inside Execute block L76");
     // example on how to decode JWT
     JWT(req.body, process.env.jwtSecret, (err, decoded) => {
 
@@ -86,7 +87,7 @@ exports.execute = function (req, res) {
             
             // decoded in arguments
             var decodedArgs = decoded.inArguments[0];
-            
+            console.log("V: Inside execute block L90");
             logData(req);
             res.send(200, 'Execute');
         } else {
@@ -102,7 +103,8 @@ exports.execute = function (req, res) {
  */
 exports.publish = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
-    //console.log( req.body );
+    console.log("V: Inside Publish block");
+    console.log( req.body );
     logData(req);
     res.send(200, 'Publish');
 };
@@ -112,7 +114,8 @@ exports.publish = function (req, res) {
  */
 exports.validate = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
-    //console.log( req.body );
+    console.log("V: Inside Validate block");
+    console.log( req.body );
     logData(req);
     res.send(200, 'Validate');
 };
