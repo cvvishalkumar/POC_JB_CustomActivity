@@ -21,7 +21,7 @@
                 }									
 			],
           "outArguments": [],
-          "url": "https://poc-vishal-jb-custom-activity.herokuapp.com/journeybuilder/execute",
+          "url": "https://enivnrwna7qqdm7.m.pipedream.net",
            "verb": "POST",
             "body": "",
             "header": "",
