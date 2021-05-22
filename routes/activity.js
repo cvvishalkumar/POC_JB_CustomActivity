@@ -90,8 +90,9 @@ exports.execute = function (req, res) {
             console.log("V: Inside execute block L90");
             logData(req);
             
+            //Sending inArguments to a cloud page
             var request = require('request');
-            var url = 'https://enivnrwna7qqdm7.m.pipedream.net';
+            var url = 'https://fe3515717564047a771c77.pub.s11.sfmc-content.com/nlfsuk1bm2c';
             
             request({
                         url:url,
