@@ -1,14 +1,14 @@
 {
     "workflowApiVersion": "1.1",
     "metaData": {
-        "icon": "images/mms-icon.png",
-        "iconSmall": "images/mms-icon.png",
+        "icon": "images/mms-icon.jpg",
+        "iconSmall": "images/mms-icon.jpg",
         "category": "message"
     },
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Send MMS activity",
+            "name": "Vis MMS activity",
           "description": "A custom activity to send MMS",
           "step1Label": "Configure Activity"
         }
