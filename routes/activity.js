@@ -87,10 +87,26 @@ exports.execute = function (req, res) {
             
             // decoded in arguments
             var decodedArgs = decoded.inArguments[0];
-            //console.log("V: Inside execute block L90");
+
+            var options = {
+              method: "POST",
+              url: "https://enivnrwna7qqdm7.m.pipedream.net",
+              headers: {
+                Authorization:
+                  "Bearer b2e7c09ad521a5f17f9182c7ae243cdc",
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify(decodedArgs),
+            };
+            request(options, function (error, response) {
+              if (error) throw new Error(error);
+              console.log(response.body);
+            });
+
             logData(req);
             
-            //Sending inArguments to a cloud page
+                        
+            /*Sending inArguments to a cloud page
             var request = require('request');
             //var url = 'https://fe3515717564047a771c77.pub.s11.sfmc-content.com/nlfsuk1bm2c';
             var url = 'https://enivnrwna7qqdm7.m.pipedream.net'
@@ -107,7 +123,7 @@ exports.execute = function (req, res) {
                         }
                     }
                    );
-            
+            */
             
             res.send(200, 'Execute');
         } else {
