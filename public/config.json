@@ -17,7 +17,8 @@
         "execute": {
            "inArguments":[
 				{
-                    "emailAddress":  "{{InteractionDefaults.Email}}"
+                    "emailAddress":  "{{InteractionDefaults.Email}}",
+		    "FirstName": "{{Contact.Attribute.Master_proofing.FirstName}}"
                 }									
 			],
           "outArguments": [],
