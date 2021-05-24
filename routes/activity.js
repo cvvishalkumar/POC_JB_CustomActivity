@@ -97,7 +97,7 @@ exports.execute = function (req, res) {
             request({
                         url:url,
                         method:"post",
-                        json: decoded.inArguments[0]
+                        json: decoded.inArguments
                     },
                     function (error, response, body)
                     {
