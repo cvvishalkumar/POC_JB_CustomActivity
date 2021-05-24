@@ -86,7 +86,7 @@ exports.execute = function (req, res) {
         if (decoded && decoded.inArguments && decoded.inArguments.length > 0) {
             
             // decoded in arguments
-            var decodedArgs = decoded.inArguments[0];
+            var decodedArgs = decoded.inArguments;
             console.log("V: Inside execute block L90");
             logData(req);
             
@@ -97,7 +97,7 @@ exports.execute = function (req, res) {
             request({
                         url:url,
                         method:"post",
-                        json: decoded.inArguments[0]
+                        json: decoded.inArguments
                     },
                     function (error, response, body)
                     {
