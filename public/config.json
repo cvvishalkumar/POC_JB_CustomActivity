@@ -16,10 +16,9 @@
     "arguments": {
         "execute": {
            "inArguments":[
-				{
-                    "emailAddress":  "{{InteractionDefaults.Email}}",
-		    "FirstName": "Vishal_hardcoded"
-                }									
+				{ "emailAddress":  "{{InteractionDefaults.Email}}"},
+		   		{ "firstName":"{{Contact.Attribute.Master_proofing.FirstName}}"}
+		   
 			],
           "outArguments": [],
           "url": "https://poc-vishal-jb-custom-activity.herokuapp.com/journeybuilder/execute",
