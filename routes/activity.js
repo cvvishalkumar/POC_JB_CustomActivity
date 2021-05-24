@@ -86,7 +86,7 @@ exports.execute = function (req, res) {
         if (decoded && decoded.inArguments && decoded.inArguments.length > 0) {
             
             
-            var decodedArgs = decoded.inArguments[1];
+           
             
                 /* decoded in arguments
             var options = {
@@ -100,6 +100,8 @@ exports.execute = function (req, res) {
               console.log(response.body);
             }); */
 
+            
+            var decodedArgs = decoded.inArguments;
             logData(req);
             
                         
