@@ -91,11 +91,7 @@ exports.execute = function (req, res) {
             var options = {
               method: "POST",
               url: "https://enivnrwna7qqdm7.m.pipedream.net",
-              headers: {
-                Authorization:
-                  "Bearer b2e7c09ad521a5f17f9182c7ae243cdc",
-                "Content-Type": "application/json"
-              },
+              headers: { "Content-Type": "application/json"},
               body: JSON.stringify(decodedArgs),
             };
             request(options, function (error, response) {
