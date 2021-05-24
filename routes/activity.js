@@ -85,9 +85,10 @@ exports.execute = function (req, res) {
 
         if (decoded && decoded.inArguments && decoded.inArguments.length > 0) {
             
-            // decoded in arguments
+            
             var decodedArgs = decoded.inArguments[1];
-
+            
+                /* decoded in arguments
             var options = {
               method: "POST",
               url: "https://enivnrwna7qqdm7.m.pipedream.net",
@@ -97,19 +98,19 @@ exports.execute = function (req, res) {
             request(options, function (error, response) {
               if (error) throw new Error(error);
               console.log(response.body);
-            });
+            }); */
 
             logData(req);
             
                         
-            /*Sending inArguments to a cloud page
+            /*Sending inArguments to a cloud page*/
             var request = require('request');
             //var url = 'https://fe3515717564047a771c77.pub.s11.sfmc-content.com/nlfsuk1bm2c';
             var url = 'https://enivnrwna7qqdm7.m.pipedream.net'
             request({
                         url:url,
                         method:"post",
-                        json: decoded.inArguments
+                        json: decodedArgs
                     },
                     function (error, response, body)
                     {
