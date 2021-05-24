@@ -63,8 +63,8 @@ exports.edit = function (req, res) {
  */
 exports.save = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
-    console.log("V: Inside Save block");
-    console.log( req.body );
+    //console.log("V: Inside Save block");
+    //console.log( req.body );
     logData(req);
     res.send(200, 'Save');
 };
@@ -87,7 +87,7 @@ exports.execute = function (req, res) {
             
             // decoded in arguments
             var decodedArgs = decoded.inArguments[0];
-            console.log("V: Inside execute block L90");
+            //console.log("V: Inside execute block L90");
             logData(req);
             
             //Sending inArguments to a cloud page
@@ -123,8 +123,8 @@ exports.execute = function (req, res) {
  */
 exports.publish = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
-    console.log("V: Inside Publish block");
-    console.log( req.body );
+    //console.log("V: Inside Publish block");
+    //console.log( req.body );
     logData(req);
     res.send(200, 'Publish');
 };
@@ -134,8 +134,8 @@ exports.publish = function (req, res) {
  */
 exports.validate = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
-    console.log("V: Inside Validate block");
-    console.log( req.body );
+    //console.log("V: Inside Validate block");
+    //console.log( req.body );
     logData(req);
     res.send(200, 'Validate');
 };
