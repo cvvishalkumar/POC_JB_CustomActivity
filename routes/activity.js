@@ -107,7 +107,7 @@ exports.execute = function (req, res) {
                         
             /*Sending inArguments to a cloud page*/
             var request = require('request');
-            var url = 'https://fe3515717564047a771c77.pub.s11.sfmc-content.com/xou5ycj0kv4'
+            var url = 'https://fe3515717564047a771c77.pub.s11.sfmc-content.com/bxrbkt2avuw'
             //var url = 'https://enivnrwna7qqdm7.m.pipedream.net'
             request({
                         url:url,
