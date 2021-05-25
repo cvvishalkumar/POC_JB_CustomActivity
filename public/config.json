@@ -17,7 +17,7 @@
         "execute": {
            "inArguments":[
 				{ 
-				  "Mobile":"{{Contact.Attribute.Master_proofing.Mobile}}"
+				  "Mobile":"{{Contact.Attribute.POC_ENDO.SubscriberKey}}"
 				}		   
 			],
           "outArguments": [],
